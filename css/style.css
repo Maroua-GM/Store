@@ -113,8 +113,9 @@ header .site-title {
 	transform: scale(2.5);
 	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.205);
 }
-/* second slider */
-.site-slider-two {
+/* second slider & third slider*/
+.site-slider-two,
+.site-slider-third {
 	position: relative;
 	height: 30%;
 }
@@ -130,16 +131,59 @@ header .site-title {
 	/* object-fit: cover; */
 	margin: auto;
 }
-.site-btn.btn-span {
+.site-slider-two .site-btn.btn-span,
+.site-slider-third .site-btn.btn-span {
 	padding: 0.8rem 1.9rem;
 	border-radius: 4rem;
 	border: 1px solid var(--border);
 	background-color: white;
 	color: var(--light-gray);
 }
+.site-slider-third .site-btn.btn-span {
+	margin-bottom: 30px;
+	transition: all 0.3s ease;
+}
+.site-slider-third .site-btn.btn-span:hover {
+	background-color: var(--primary-color);
+	color: white;
+}
 
 .slider-two .slick-track .product:hover span {
 	background-color: var(--primary-color);
+}
+.site-slider-third .product {
+	border: 1px solid lightgray;
+	margin: 6px;
+	border-radius: 6px;
+	padding: 20px;
+}
+.site-slider-third .product img {
+	height: 100%;
+	width: 80%;
+	/* object-fit: cover; */
+	margin: auto;
+}
+.site-slider-third .product .site-btn .btn-name {
+	font-family: var(--roboto);
+	font-size: 16px;
+	font-weight: 500;
+}
+.site-slider-third .product .starts {
+	color: var(--primary-color);
+	font-size: 14px;
+}
+.site-slider-third .product .price {
+	color: orange;
+	font-family: var(--roboto);
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+.site-slider-third .product .price a {
+	color: black;
+}
+.site-slider-third .product .price .price-before {
+	color: gray;
+	text-decoration: line-through;
 }
 /* features products section */
 
