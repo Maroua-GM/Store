@@ -190,3 +190,110 @@ header .site-title {
 .section .site-title {
 	font-family: var(--gugi);
 }
+/* section 4 */
+.section4 .row {
+	align-items: center;
+	/* margin-top: 50px; */
+}
+.section4 .row .days {
+	border: 1px solid lightgray;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 15px;
+	transition: all 0.3s ease;
+}
+.section4 .row .days:hover {
+	color: white;
+	background: rgb(243, 254, 255);
+}
+.section4 .row .days .number {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 20px;
+	font-family: var(--roboto);
+}
+.section4 .row .days .string {
+	font-family: var(--roboto);
+	font-style: italic;
+	font-weight: 500;
+	color: gray;
+}
+.section4 .row .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.section4 .row .details {
+	background: rgb(243, 254, 255);
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	font-family: var(--roboto);
+}
+.section4 .row .details .starts {
+	color: var(--primary-color);
+}
+.section4 .row .details .price {
+	color: orange;
+	font-size: 18px;
+	font-size: 25px;
+}
+.section4 .row .details .price .price-before {
+	text-decoration: line-through;
+	color: gray;
+	font-size: 18px;
+}
+.section4 .site-btn.btn-span {
+	padding: 0.8rem 1.9rem;
+	border-radius: 4rem;
+	border: 1px solid var(--border);
+	background-color: var(--primary-color);
+	color: white;
+	transition: all 0.3s ease;
+}
+.section4 .site-btn.btn-span:hover {
+	background-color: lightgray;
+	color: gray;
+}
+.section4 .row .details .row {
+	margin-right: 25%;
+}
+.section4 .row .details .reaction {
+	display: flex;
+}
+
+.section4 .row .details .reaction div:hover {
+	color: white;
+	background: var(--primary-color);
+}
+.section4 .row .details .reaction div {
+	background: white;
+	margin: 0 8px;
+	padding: 10px;
+	border-radius: 100%;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+.section4 .row .details .row {
+	justify-content: space-between;
+}
+@media (max-width: 500px) {
+	.section4 .row .row1 {
+		padding: 0;
+		margin-left: 0px !important;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		text-align: center;
+	}
+	.section4 .row .image img {
+		margin-left: 25% !important;
+	}
+	.section4 .row .details .row .reaction {
+		display: none;
+	}
+}
