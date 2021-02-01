@@ -10,6 +10,7 @@
 	--gugi: "Gugi", cursive;
 	--sofia: "Sofia", cursive;
 }
+
 .primary-color {
 	color: var(--primary-color);
 }
@@ -26,6 +27,9 @@
 header {
 	background-color: var(--primary-color);
 	font-family: var(--roboto);
+	position: fixed;
+	z-index: 99;
+	width: 100%;
 }
 header .site-title {
 	font-family: var(--gugi);
@@ -39,10 +43,12 @@ header .site-title {
 	text-decoration: none;
 	color: white;
 }
+
 /* Navigation menu */
 .navbar-nav {
 	padding: 0.8em 0em;
 }
+
 .navbar-nav .nav-link {
 	font-size: 0.9em;
 	color: var(--light-gray) !important;
@@ -119,7 +125,9 @@ header .site-title {
 	overflow: hidden;
 }
 .site-slider-two .product img {
-	width: 90%;
+	height: 89%;
+	width: 70%;
+	/* object-fit: cover; */
 	margin: auto;
 }
 .site-btn.btn-span {
@@ -132,4 +140,9 @@ header .site-title {
 
 .slider-two .slick-track .product:hover span {
 	background-color: var(--primary-color);
+}
+/* features products section */
+
+.section .site-title {
+	font-family: var(--gugi);
 }

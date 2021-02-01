@@ -9,10 +9,36 @@ $(".slider-one").not(".slick-intialized").slick({
 });
 // second slider
 
-$(".slider-two").not(".slick-intialized").slick({
-	prevArrow: ".site-slider-two .slider-btn .prev",
-	nextArrow: ".site-slider-two .slider-btn .next",
-	slidesToShow: 5,
-	slidesToScroll: 1,
-	autoplaySpeed: 3000,
-});
+$(".slider-two")
+	.not(".slick-intialized")
+	.slick({
+		prevArrow: ".site-slider-two .slider-btn .prev",
+		nextArrow: ".site-slider-two .slider-btn .next",
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		autoplaySpeed: 3000,
+		autoplayHoverPause: true,
+		responsive: [
+			{
+				breakpoint: 1300,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
