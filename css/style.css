@@ -125,7 +125,8 @@ header .site-title {
 }
 /* second slider & third slider*/
 .site-slider-two,
-.site-slider-third {
+.site-slider-third,
+.site-slider-for {
 	position: relative;
 	height: 30%;
 }
@@ -167,7 +168,8 @@ header .site-title {
 	border-radius: 6px;
 	padding: 20px;
 }
-.site-slider-third .product img {
+.site-slider-third .product img,
+.site-slider-for .product img {
 	height: 100%;
 	width: 80%;
 	/* object-fit: cover; */
